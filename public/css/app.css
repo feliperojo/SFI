@@ -1,0 +1,57 @@
+section, h1{
+  color:#1B5B94;
+}
+div.nuevo{
+  background-color: orange;
+
+}
+/*boton crear nuevo estudio*/
+.btnnuevo a, .btn{
+  color: rgb(252, 249, 248);
+  background-color:#FF671D;
+  border:rgb(252, 249, 248);
+  font-weight:500;  
+}
+hr{
+  color:#f65b0d;
+  
+}
+.texto-encima{
+  position: absolute;
+  word-wrap: break-word;
+  color: aliceblue;
+  font-size: 45px;
+}
+.diadehoy{
+display: none;  
+}
+
+.notaend{
+  color: rgb(170, 163, 163);
+}
+.notacondition{
+  color: rgb(170, 163, 163);
+  
+}
+.popup-class {
+  border-radius: 0;
+}
+input{
+  text-transform: capitalize;
+}
+.bodypdf {
+  height: 842px;
+  width: 610px;
+  /* to centre page on screen*/
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bodypdf.col{
+        font-family: Arial;
+        color:steelblue;
+        font-size: 12px;
+      }
+      body .div .pre .b {
+        color:steelblue;
+      }
