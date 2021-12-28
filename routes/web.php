@@ -17,7 +17,7 @@ use Barryvdh\DomPDF\Facade as PDF;
 
 */
 Route::get('/', function () {
-    return view('sfiformulario');
+    return view('welcome');
 });
 
 Route::get('sfiformulario/{id}/pdf',[PreaprobadoController::class,'pdf']);
