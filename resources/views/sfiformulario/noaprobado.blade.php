@@ -30,7 +30,7 @@
   <p>
 Estimado/a <b style = "text-transform:uppercase;">{{$estudiopdf->nombre_completo}}</b>,
 
-Lamentamos informarte que nuestros analistas han dimitido tu solicitud de Preaprobación de Renta referente a la aplicación para el monto de *monto dimitido*. 
+Lamentamos informarte que nuestros analistas han dimitido tu solicitud de Preaprobación de Renta referente a la aplicación para el monto de <b style = "text-transform:uppercase;">{{$estudiopdf->Presupues_mens}}</b>. 
 
 ¡Pero tienes más opciones! Con la información brindada, puedes aplicar para obtener una Garantía de Renta para el arrendamiento de un inmueble cuyo monto mensual sea algo menor. 
 </p>
@@ -38,7 +38,7 @@ Lamentamos informarte que nuestros analistas han dimitido tu solicitud de Preapr
   <p class="mb-0">Gracias por tu confianza.</p>
 
     
-  <a href="{{ url('sfiformulario/') }}" class="btn btn-outline" >Regresar</a>
+  <a href="{{ url('sfiformulario/') }}" class="btn btn-primary" >Regresar</a>
   </div>
   </div>
 
