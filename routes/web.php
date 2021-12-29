@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PreaprobadoController;
+use App\Http\Controllers\usuarioController;
 use App\Models\preaprobado;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -32,8 +33,9 @@ Route::get('sfiformulario/pdf', function () {
 
    
   });
+
+Route::get('sfiusuario/create',[usuarioController::class,'create']);
 */
-
-
+Route::resource('sfiusuario', UsuarioController::class); 
 Route::resource('sfiformulario', PreaprobadoController::class); 
 

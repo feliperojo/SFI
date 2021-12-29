@@ -14,7 +14,9 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        //
+        $datousu['sfiusuarios']=Usuario::all();
+        return view('sfiusuario.index',$datousu);
+
     }
 
     /**
@@ -24,7 +26,7 @@ class UsuarioController extends Controller
      */
     public function create()
     {
-        //
+        return view('sfiusuario.create');
     }
 
     /**
