@@ -29,22 +29,21 @@
  
  <div class="container overflow-hidden" style="flex-wrap:wrap;   min-width: 300px;"> 
  <div class="row">
-    <div class="col ">
-    <div class="form-floating mb-3 " >      
-        <input type="text" name="Donde_vivir" value="{{ isset($estudio) ? $estudio->Donde_vivir : '' }}"  class="form-control"  id="" required>
-        <label for="floatingInput">¿Dónde te gustaría vivir? (Ciudad, colonia o barrio)</label>
-        </div> 
+     <label for="floatingInput">¿Dónde te gustaría vivir? (Ciudad, colonia o barrio)</label>    
+    <div class="form-floating mb-3 " >             
+        <input type="text" name="Donde_vivir" value="{{ isset($estudio) ? $estudio->Donde_vivir : '' }}"  class="form-control"  id="" required>        
+        </div>
     </div>
-    <div class="col">
-    <div class="form-floating mb-3">          
-    <input type="text" name="Presupues_mens" value="{{ isset($estudio) ? $estudio->Presupues_mens : '' }}" class="form-control"  required>
-    <label for="floatingInput">¿Cuál es tu presupuesto para la renta mensual en $MXN (incluidos los gastos de mantenimiento) Ej. $10.000 MXN</label>
-    </div>
-</div>
-  </div>    
     <div class="row">
-        <div class="col"> 
-            <label for="">¿Ya has decidido qué inmueble rentar?</label>
+        <label for="floatingInput">¿Cuál es tu presupuesto para la renta mensual en $MXN (incluidos los gastos de mantenimiento) Ej. $10.000 MXN</label>
+        <div class="form-floating mb-3">              
+        <input type="text" name="Presupues_mens" value="{{ isset($estudio) ? $estudio->Presupues_mens : '' }}" class="form-control"  required>
+    
+    </div>
+    </div>
+      
+    <div class="row">        
+        <label for="">¿Ya has decidido qué inmueble rentar?</label>
         <div class="form-check">
          <input class="form-check-input" type="radio" name="Decidido_inm" id="flexRadioDefault1" value="Si" {{ isset($estudio) && $estudio->Decidido_inm == 'Si'? 'checked': '' }}>
          <label class="form-check-label" for="flexRadioDefault1">Sí</label>
@@ -53,50 +52,53 @@
     <input class="form-check-input" type="radio" name="Decidido_inm" id="flexRadioDefault2"  value="No" {{ isset($estudio) && $estudio->Decidido_inm == 'No'? 'checked': '' }}>
     <label class="form-check-label" for="flexRadioDefault2">No</label>
     </div>
-    </div> 
+    </div>
        
-        <div class="col">
+        <div class="row">
+        <label for="floatingInput">Nombre completo</label>
         <div class="form-floating mb-3"> 
             <input id="nombre_completo" type="text" name="nombre_completo" value="{{ isset($estudio) ? $estudio->nombre_completo : ''}}" class="form-control" required >
-            <label for="floatingInput">Nombre completo</label>
+            
         </div>
         </div>
-        </div>
-    <div class="row">
-    <div class="col">
+        
+    <div class="row">   
+    <label for="floatingInput">Correo electrónico de contacto</label>
     <div class="form-floating mb-3">
             <input type="text" name="correo"  value="{{ isset($estudio) ? $estudio->correo : ''}}" class="form-control" required>
-            <label for="floatingInput">Correo electrónico de contacto</label>
+            
     </div>
     </div>    
-        <div class="col">
+        <div class="row">
+        <label for="floatingInput">Número de celular</label>
         <div class="form-floating mb-3">                     
                 <input type="text" name="celular" value="{{ isset($estudio) ? $estudio->celular : ''}}" class="form-control" required>
-                <label for="floatingInput">Número de celular</label>
+                
         </div>
         </div>
-        </div> 
+         
         <div class="row">   
-        <div class="col"> 
+        <label for="floatingInput">Rfc</label>
         <div class="form-floating mb-3">       
                 <input type="text" name="rfc" value="{{ isset($estudio) ? $estudio->rfc : ''}}" class="form-control" required>
-                <label for="floatingInput">Rfc</label>
+                
             </div>
          </div>     
-        <div class="col"> 
+        <div class="row"> 
+        <label for="floatingInput">Fecha de nacimiento</label>
         <div class="form-floating mb-3">       
-            <input type="date" name="fecha_nacimiento" value="{{ isset($estudio) ? $estudio->fecha_nacimiento : ''}}" class="form-control" required>
-            <label for="floatingInput">Fecha de nacimiento</label>
+            <input type="date" name="fecha_nacimiento" value="{{ isset($estudio) ? $estudio->fecha_nacimiento : ''}}" class="form-control" required>            
             </div>
             </div>
-            </div>
-    <div class="row">
-        <div class="col">         
+            
+    <div class="row">              
         <label for="floatingInput">Genero</label>
         <div class="form-check">
             <input class="form-check-input" type="radio" name="genero" id="flexRadioDefault1" value="Masculino" {{ isset($estudio) && $estudio->genero == 'Masculino'? 'checked': '' }}>
-            <label class="form-check-label" for="flexRadioDefault1">Masculino</label>
+            
      </div>
+     </div>
+
          <div class="form-check">
              <input class="form-check-input" type="radio" name="genero" id="flexRadioDefault2"  value="Femenino" {{ isset($estudio) && $estudio->genero == 'Femenino'? 'checked': ''}}>
             <label class="form-check-label" for="flexRadioDefault2">Femenino</label>
@@ -106,8 +108,8 @@
             <label class="form-check-label" for="flexRadioDefault2">Prefiero no decirlo</label>
    
     </div>
-    </div>     
-         <div class="col">          
+      
+         <div class="row">          
          <div class="form-floating mb-3">                                   
             <select class="form-select" aria-label=".form-select-lg example" name="estado_civil" required>
                 <option >Estado civil</option>
@@ -119,9 +121,8 @@
             </select>
          </div>  
          </div>
-    </div>
-    <div class="row">
-        <div class="col">        
+   
+    <div class="row">              
         <div class="form-floating mb-3">
         <select class="form-select" aria-label=".form-select-lg example" name="escolaridad" required>
             <option>Grado de escolaridad</option>
@@ -136,15 +137,15 @@
             </select>
          </div>  
          </div>   
-         <div class="col">
+         <div class="row">
+         <label for="floatingInput"># de personas que dependen económicamente de ti (si no tienes, pon 0)</label>
              <div class="form-floating mb-3">          
-             <input type="text" name="n_personas" value="{{ isset($estudio) ? $estudio->n_personas : ''}}" class="form-control" required >
-             <label for="floatingInput"># de personas que dependen económicamente de ti (si no tienes, pon 0)</label>
+             <input type="text" name="n_personas" value="{{ isset($estudio) ? $estudio->n_personas : ''}}" class="form-control" required >             
              </div>
         </div>
-    </div>
+    
      <div class="row">
-         <div class="col">            
+                    
                 <div class="form-floating mb-3">                
                 <select class="form-select" aria-label=".form-select-lg example" name="situacion_lab" required>
                 <option>Situación laboral</option>                              
@@ -159,16 +160,17 @@
                 </select>
                 </div> 
         </div>
-        <div class="col">
+        <div class="row">
+        <label for="floatingInput">Nombre de la empresa en que trabajas</label>
             <div class="form-floating mb-3">        
                 <input type="text" name="nomb_empre" value="{{ isset($estudio) ? $estudio->nomb_empre : ''}}" class="form-control" required>
-                <label for="floatingInput">Nombre de la empresa en que trabajas</label>
+                
             </div>    
         </div>        
-    </div>
+    
     
     <div class="row">
-        <div class="col">
+       
         <div class="form-floating mb-3">                
                 <select class="form-select" aria-label=".form-select-lg example" name="antiguedad_empre" required>
                 <option >Antiguedad en la empresa</option>                
@@ -182,7 +184,7 @@
             </div>
             </div>
                 
-            <div class="col">
+            <div class="row">
             <div class="form-floating mb-3">                 
                 <select class="form-select" aria-label=".form-select-lg example" name="cargo_empresa"required>
                 <option>Descripción de tu cargo (si aplica)</option>               
@@ -201,10 +203,9 @@
                 </select>
              </div>
              </div>
-    </div>
    
-    <div class="row">
-        <div class="col">
+   
+    <div class="row">     
         <div class="form-floating mb-3">
                 <select class="form-select" aria-label=".form-select-lg example" name="fuente_ingreso" required>
                 <option>Fuente de ingresos principal</option> 
@@ -216,35 +217,36 @@
                 </select>
             </div>
             </div> 
-        <div class="col">
+        <div class="row">
+        <label for="floatingInput">Ingresos mensuales actividad económica principal (En $MXN)</label>
         <div class="form-floating mb-3">              
             <input type="number" name="ing_men_principal" value="{{ isset($estudio) ? $estudio->ing_men_principal : ''}}" class="form-control" id="ing_men_principal"  required>
-            <label for="floatingInput">Ingresos mensuales actividad económica principal (En $MXN)</label>
+           
     </div>
     </div>
-    </div>
+    
     <div class="row">
-        <div class="col">
+    <label for="floatingInput">Otros ingresos mensuales (En $MXN, si no tienes, pon $0)</label> 
         <div class="form-floating mb-3">               
             <input type="number" name="otros_ingresos" value="{{ isset($estudio) ? $estudio->otros_ingresos : ''}}" class="form-control" id="otros_ingresos" required>
-            <label for="floatingInput">Otros ingresos mensuales (En $MXN, si no tienes, pon $0)</label> 
+            
         </div>
         </div>
-        <div class="col">
+        <div class="row">
+        <label for="floatingInput">Gastos/egresos mensuales (En $MXN)</label>
         <div class="form-floating mb-3">  
             <input type="number" name="gastos_mensual" value="{{ isset($estudio) ? $estudio->gastos_mensual : ''}}" class="form-control" id="gastos_mensual" required>
-            <label for="floatingInput">Gastos/egresos mensuales (En $MXN)</label>
+            
             </div>
         </div>
-    </div>
+    
     <div class="row">
-        <div class="col"> 
-        <div class="form-floating mb-3">    
-    <input type="text" name="observacion" value="{{ isset($estudio) ? $estudio->observacion : ''}}" class="form-control"  required>
     <label for="floatingInput">Observaciones (puedes ingresar información que consideres importante para tu solicitud de renta)</label>
+        <div class="form-floating mb-3">    
+    <input type="text" name="observacion" value="{{ isset($estudio) ? $estudio->observacion : ''}}" class="form-control"  required>   
     </div>
     </div>
-    </div>
+    
     <div class="diadehoy">
         <input type="date"  name="created_at" value="<?php echo date("Y-m-d");?>">
     </div>
