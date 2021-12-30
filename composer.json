@@ -14,7 +14,8 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.4",
         "nesbot/carbon": "^2.55",
-        "spatie/laravel-newsletter": "^4.10"
+        "spatie/laravel-newsletter": "^4.10",
+        "ext-gd": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

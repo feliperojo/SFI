@@ -38,7 +38,7 @@ Lamentamos informarte que nuestros analistas han dimitido tu solicitud de Preapr
   <p class="mb-0">Gracias por tu confianza.</p>
 
     
-  <a href="{{ url('sfiformulario/') }}" class="btn btn-primary" >Regresar</a>
+  <a href="{{ url('/') }}" class="btn btn-primary" >Regresar</a>
   </div>
   </div>
 

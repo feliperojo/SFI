@@ -74,6 +74,7 @@ class PreaprobadoController extends Controller
        
         $pdf = PDF::loadView('sfiformulario.pdf', compact('estudiopdf'));    
         return $pdf->stream('Certidicado_de_estudio.pdf');
+        return view('/');
 
 
       }
