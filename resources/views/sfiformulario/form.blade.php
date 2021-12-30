@@ -27,15 +27,15 @@
   <br>
  <br> 
  
- <div class="container overflow-hidden"> 
+ <div class="container overflow-hidden" style="flex-wrap:wrap;   min-width: 300px;"> 
  <div class="row">
-    <div class="col col-sm-12 col-lg-6 col-md-6">
+    <div class="col ">
     <div class="form-floating mb-3 " >      
         <input type="text" name="Donde_vivir" value="{{ isset($estudio) ? $estudio->Donde_vivir : '' }}"  class="form-control"  id="" required>
         <label for="floatingInput">¿Dónde te gustaría vivir? (Ciudad, colonia o barrio)</label>
         </div> 
     </div>
-    <div class="col col-sm-12 col-log-6 col-md-6">
+    <div class="col">
     <div class="form-floating mb-3">          
     <input type="text" name="Presupues_mens" value="{{ isset($estudio) ? $estudio->Presupues_mens : '' }}" class="form-control"  required>
     <label for="floatingInput">¿Cuál es tu presupuesto para la renta mensual en $MXN (incluidos los gastos de mantenimiento) Ej. $10.000 MXN</label>

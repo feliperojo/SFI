@@ -21,8 +21,9 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
-                max-width: 100%;
-                height: auto;
+               
+                flex-wrap:wrap;
+                min-width: 300px;
             }
             .home{
                 display: flex ;
@@ -46,7 +47,7 @@
                     </svg>
                 </div>
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg" style="flex-wrap:wrap;  min-width: 300px; display: flex ;">
                     <div class="grid grid-cols-1 md:grid-cols-2 ">
                         <div class="p-6 ">
                             <div class="flex items-center">
