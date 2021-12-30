@@ -256,9 +256,10 @@
     <div class="btnnuevo">
       <input type="submit"  value=" {{$modo}} Estudio" class="btn btn-outline ">       
     </div>    
-    </div>  
+    </div>
+    <!--   
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/js/sweetAlert.js"></script>
+    <script src="/js/sweetAlert.js"></script>-->
     
     
     </body>
