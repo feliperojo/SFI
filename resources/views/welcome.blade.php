@@ -68,7 +68,7 @@
 
                             <div class="ml-12" >
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
+                                Rent10 se encarga por las inmobiliarias y propietarios de toda la gestión financiera que implica rentar una vivienda y asegura a los propietarios el pago de su renta el día 10 de cada mes, aunque sus inquilinos no paguen..
                                 </div>
                             </div>
                         </div>

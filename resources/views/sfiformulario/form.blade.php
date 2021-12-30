@@ -79,7 +79,7 @@
         <div class="row">   
         <div class="col"> 
         <div class="form-floating mb-3">       
-                <input type="number" name="rfc" value="{{ isset($estudio) ? $estudio->rfc : ''}}" class="form-control" required>
+                <input type="text" name="rfc" value="{{ isset($estudio) ? $estudio->rfc : ''}}" class="form-control" required>
                 <label for="floatingInput">Rfc</label>
             </div>
          </div>     
