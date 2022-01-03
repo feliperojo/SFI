@@ -91,13 +91,13 @@
             </div>
             </div>
             
-    <div class="row">              
+    <div class="row border-spacing">              
         <label for="floatingInput">Genero</label>
         <div class="form-check">
             <input class="form-check-input" type="radio" name="genero" id="flexRadioDefault1" value="Masculino" {{ isset($estudio) && $estudio->genero == 'Masculino'? 'checked': '' }}>
-            
+            <label class="form-check-label" for="flexRadioDefault2">Masculino</label>
      </div>
-     </div>
+     
 
          <div class="form-check">
              <input class="form-check-input" type="radio" name="genero" id="flexRadioDefault2"  value="Femenino" {{ isset($estudio) && $estudio->genero == 'Femenino'? 'checked': ''}}>
@@ -107,6 +107,7 @@
             <input class="form-check-input" type="radio" name="genero" id="flexRadioDefault2"  value="Prefiero no decirlo" {{ isset($estudio) && $estudio->genero == 'Prefiero no decirlo'? 'checked': ''}}>
             <label class="form-check-label" for="flexRadioDefault2">Prefiero no decirlo</label>
    
+    </div>
     </div>
       
          <div class="row">          

@@ -37,6 +37,7 @@ class CreatePreaprobadosTable extends Migration
             $table->string('gastos_mensual');
             $table->string('observacion');
             $table->string('Estado');
+            $table->string('resultado');
             $table->date('created_at');
         });
     }
