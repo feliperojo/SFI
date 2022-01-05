@@ -13,7 +13,7 @@
   
       <body class="bodypdf">
       <table>
- <!-- <td><img src="{{public_path('img/renrtlogo.png')}}" alt="" style="width: 320px; height: 160px;">   </td> -->
+<td><img src="{{public_path('img/renrtlogo.png')}}" alt="" style="width: 320px; height: 160px;">   </td>
   <td>     <pre><p align="right" font-zise="2px" style="color: #1B5B94;  font-size: 13px;">Av Insurgente 1647, piso 12
           CDMX, Mexico
           +57 317 431 8376
