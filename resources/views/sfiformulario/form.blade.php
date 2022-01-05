@@ -13,7 +13,8 @@
   <script src="/js/funciones.js"></script>
   
 </head>
-<body>
+
+<body >
     
 <section class="container rounded p-6" >
         <img src="/img/prerent.png" class="img-fluid" >        
