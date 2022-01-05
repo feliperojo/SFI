@@ -26,7 +26,7 @@ Route::get('sfiformulario/progreso', function () {
 
 Route::get('sfiformulario/{id}/pdf',[PreaprobadoController::class,'pdf']);
 
-/*
+
 
 Route::get('sfiformulario/pdf', function () { 
     
@@ -36,9 +36,9 @@ Route::get('sfiformulario/pdf', function () {
 
    
   });
-
+/*
 Route::get('sfiusuario/create',[usuarioController::class,'create']);
 */
 Route::resource('sfiusuario', UsuarioController::class); 
-Route::resource('sfiformulario', 'PreaprobadoController'); 
+Route::resource('sfiformulario', PreaprobadoController::class); 
 

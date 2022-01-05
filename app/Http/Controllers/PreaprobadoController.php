@@ -45,6 +45,8 @@ class PreaprobadoController extends Controller
      */
     public function create()
     {
+
+
         return view('sfiformulario.create');
     }
 

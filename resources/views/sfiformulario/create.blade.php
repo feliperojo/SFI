@@ -24,7 +24,7 @@
 </section>
   <div class="container text-white text-center " id="nuevo">
       <hr width=100%    size=5>
-        <h1>{{ $modo }} Estudio</h1>
+        <h1>Aplicar Estudio</h1>
       <hr width=100%    size=5>
       <div class="notacondition">
         <center><p>Completa este corto formulario, obtén tu preaprobación Rent10 y aplica a tantas propiedades en renta como necesites con una sola aplicación. Tiempo estimado para completar: 4 minutos</p></center>
@@ -263,7 +263,7 @@
     <br>
     <br>
     <div class="btnnuevo">
-      <input type="submit"  value=" {{$modo}} Estudio" class="btn btn-outline ">       
+      <input type="submit"  value="Aplicar Estudio" class="btn btn-outline ">       
     </div>    
     </div>
     <!--   
