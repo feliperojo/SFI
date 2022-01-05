@@ -42,3 +42,5 @@ Route::get('sfiusuario/create',[usuarioController::class,'create']);
 Route::resource('sfiusuario', UsuarioController::class); 
 Route::resource('sfiformulario', PreaprobadoController::class); 
 
+Route::post('sfiformulario/envio', 'PreaprobadoController@store'); 
+

@@ -1,5 +1,5 @@
 
-<form action="{{ url('/sfiformulario')}}" method="POST">
+<form action="{{ url('/sfiformulario/envio')}}" method="POST">
 @csrf
 @include('sfiformulario.form',['modo'=>'Aplicar']);
 

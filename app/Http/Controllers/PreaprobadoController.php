@@ -57,6 +57,9 @@ class PreaprobadoController extends Controller
     public function store(Request $request)
     {
 
+
+        return $request;
+
       $datosformulario = request()->except('_token');
       
     
