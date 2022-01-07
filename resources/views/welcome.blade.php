@@ -21,7 +21,7 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
-                display: flex;
+               
                 flex-wrap:wrap;
                 min-width: 300px;
             }
