@@ -27,16 +27,16 @@ Route::get('sfiformulario/progreso', function () {
 Route::get('sfiformulario/{id}/pdf',[PreaprobadoController::class,'pdf']);
 
 
+/*
 
 Route::get('sfiformulario/pdf', function () { 
     
     $pdf = PDF::loadView('sfiformulario.pdf');    
     return $pdf->stream('prueba.pdf');
-   
+ });  
 
    
-  });
-/*
+
 Route::get('sfiusuario/create',[usuarioController::class,'create']);
 */
 Route::resource('sfiusuario', UsuarioController::class); 
