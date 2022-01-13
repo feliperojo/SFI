@@ -15,10 +15,12 @@
     <div class="img-container">
             <img src="/img/listaestudios.png" class="img-fluid">
   </div> 
-  <br> 
+  <br>
+  <div> 
   <div class="btnnuevo">
             <a href="{{ url('sfiformulario/create') }}" class="btn btn-outline" >Crear Nuevo Estudio</a>                        
-  </div>   
+  </div>  
+   
 <table class="table table-light">
     <thead class="thead-light">
         <tr>
@@ -205,6 +207,7 @@
         @endforeach
     </tbody>
 </table>
+<button>reporte</button>
     <div class="d-flex justify-content-end">
       {{ $sfiformularios->links() }}
     </div>    
