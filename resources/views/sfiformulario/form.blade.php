@@ -264,7 +264,7 @@
             <br>
             <br>
             <div class="row">            
-                <input type="submit" value="Aplicar Estudio" class="btn btn-outline " style="color: white; background-color:#FF671D; border:rgb(252, 249, 248); font-weight:500;  ">
+                <input type="submit" value="{{ $modo }} Estudio" class="btn btn-outline " style="color: white; background-color:#FF671D; border:rgb(252, 249, 248); font-weight:500;  ">
                 </div>
             </div>
         </div>

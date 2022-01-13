@@ -133,8 +133,8 @@ class PreaprobadoController extends Controller
         $datosformulario = request()->except(['_token','_method']);
         preaprobado::where('id','=',$id)->update($datosformulario);
         $estudio=preaprobado::findOrfail($id);
-        return view('sfiformulario.edit', compact('estudio') );
-     
+        //return view('sfiformulario.edit', compact('estudio') );
+        return redirect('sfiformulario');
 
      
 
