@@ -70,9 +70,9 @@ class PreaprobadoController extends Controller
         $mensaje='Estudio Aprobado';       
         $estudiopdf = preaprobado::insert($datosformulario); 
         $estudiopdf = preaprobado::latest('id')->first();
-        return view('sfiformulario.pdf', compact('estudiopdf'));      
-       // $pdf = PDF::loadView('sfiformulario.pdf', compact('estudiopdf'));    
-       // return $pdf->stream('Certidicado_de_estudio.pdf');
+             
+       $pdf = PDF::loadView('sfiformulario.pdf', compact('estudiopdf'));    
+       return $pdf->stream('Certidicado_de_estudio.pdf');
         
 
 
@@ -134,6 +134,7 @@ class PreaprobadoController extends Controller
         preaprobado::where('id','=',$id)->update($datosformulario);
         $estudio=preaprobado::findOrfail($id);
         return view('sfiformulario.edit', compact('estudio') );
+     
 
      
 

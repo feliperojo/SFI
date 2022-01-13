@@ -1,6 +1,7 @@
-section, h1{
-  color:#1B5B94;
+.body{
+  background:#1B5B94;
 }
+
 div.nuevo{
   background-color: orange;
 
@@ -56,4 +57,10 @@ input{
       body .div .pre .b {
         color:steelblue;
       }
- 
+      .form-outer{
+        width: flex;
+        background: #fff;
+        border-radius: 5px;
+        text-align: left;
+        padding: 50px 35px 10px 35px;
+        }
