@@ -66,14 +66,14 @@ class PreaprobadoController extends Controller
       if  (($resultadon=(($datosformulario['ing_men_principal'] + $datosformulario['otros_ingresos'])-$datosformulario['gastos_mensual'])/2.5) > $datosformulario['Presupues_mens']){
         
         $datosformulario['Estado']='Aprobado';
-        $datosformulario['resultado']= $resultadon;
+       // $datosformulario['resultado']= $resultadon;
         $mensaje='Estudio Aprobado';       
         $estudiopdf = preaprobado::insert($datosformulario); 
        // $estudiopdf = preaprobado::latest('id')->first();
              
-      //$pdf = PDF::loadView('sfiformulario.pdf', compact('estudiopdf'));    
-      // return $pdf->stream('Certidicado_de_estudio.pdf');
-      return redirect('sfiformulario');
+      $pdf = PDF::loadView('sfiformulario.pdf', compact('estudiopdf'));    
+       return $pdf->stream('Certidicado_de_estudio.pdf');
+      
 
 
       }
