@@ -68,7 +68,7 @@ class PreaprobadoController extends Controller
         $datosformulario['Estado']='Aprobado';
        // $datosformulario['resultado']= $resultadon;
         $estudiopdf = preaprobado::insert($datosformulario); 
-       // $estudiopdf = preaprobado::latest('id')->first();
+        $estudiopdf = preaprobado::latest('id')->first();
              
       $pdf = PDF::loadView('sfiformulario.pdf', compact('estudiopdf'));    
        return $pdf->stream('Certidicado_de_estudio.pdf');
