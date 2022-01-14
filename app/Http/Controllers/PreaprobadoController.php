@@ -67,7 +67,6 @@ class PreaprobadoController extends Controller
         
         $datosformulario['Estado']='Aprobado';
        // $datosformulario['resultado']= $resultadon;
-        $mensaje='Estudio Aprobado';       
         $estudiopdf = preaprobado::insert($datosformulario); 
        // $estudiopdf = preaprobado::latest('id')->first();
              
