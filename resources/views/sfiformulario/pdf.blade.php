@@ -13,7 +13,7 @@
   
       <body class="bodypdf">
       <table>
-  <td><img src="{{public_path('img/renrtlogo.png')}}" alt="" style="width: 320px; height: 160px;">   </td>
+  <td><img src="{{public_path('img/renrtlogo.png')}}" alt="" style="width: 320px; height: 160px; font-family: 'Roboto', sans-serif;">   </td>
   <td>     <pre><p align="right" font-zise="2px" style="color: #1B5B94;  font-size: 13px;">Av Insurgente 1647, piso 12
           CDMX, Mexico
           +57 317 431 8376
@@ -26,12 +26,13 @@
   
   <style>
     body {
+      font-family: 'Roboto', sans-serif;
         height: 842px;
         width: 700px;
         /* to centre page on screen*/
         margin-left: 5px;
         margin-right: 5px;
-        font-family: Arial, Helvetica, sans-serif;
+       /* font-family: Arial, Helvetica, sans-serif;*/
         font-size: 18px;
         
     }
@@ -43,13 +44,16 @@
             body .div .pre .b {
               color:steelblue;
             }
-            footer{
-       
-        /* to centre page on screen*/
-        height: 842px;
-        width: 700px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
+            #footer {
+                position:fixed;
+                left:0px;
+                bottom:0px;
+                height:80px;
+                width:100%;
+               /* background:rgb(212, 212, 212);*/
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif;
+
      
      
       
@@ -57,8 +61,9 @@
     }
     </style>  
     <div class="container " style="margin-left:10px; margin-right: 5px; width: 680px;">  
-    <pre><b style="color: #1B5B94; font-size: 21px;">         CERTIFICADO DE PREAPROBACIÓN PARA RENTAR</b>
+    <pre><b style="color: #1B5B94; font-size: 21px; font-family: 'Roboto', sans-serif;">         CERTIFICADO DE PREAPROBACIÓN PARA RENTAR</b>
 {{$estudiopdf->created_at->isoFormat('dddd D \d\e MMMM \d\e\l Y')}}
+
 
 
 SFI Servicios Inmobiliarios México, S.A. de C.V. <b>[Rent10]</b>, con RFC SSI210706KY1 y
@@ -77,8 +82,9 @@ agente inmobiliario para que se ponga en contacto con nosotros y podamos continu
 él/ella.
 
 
-Atentamente,
 
+
+Atentamente,
 
 
 
@@ -96,13 +102,15 @@ Analista de Riesgo</pre>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-   
-    <br>   
-    <hr size=10 style="width: 100%; margin:0;">
-    <div class="container" style="font-size: 15px; width: 100%; margin:0;">    
+ 
+     
+    
+    <div  id="footer" >  
+    <hr size=10 style="width: 100%; margin:0; background:#1B5B94;">   
     <pre><p>Recuerda: Esto no es una garantía para rentar. Indica únicamente que con la información brindada, el usuario podría obtener una
   Garantía de Renta con Rent10. El trámite está sujeto a análisis de riesgo crediticio, validación de documentación pendiente de envío, 
   aprobación de la compañía y realización del pago correspondiente.</p></pre>
   </div>
   </body> 
+ 
 </html>

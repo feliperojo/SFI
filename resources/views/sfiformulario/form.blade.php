@@ -1,8 +1,9 @@
 
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="es">    
     <head>
         <title>Preaprobacion de Renta</title>
+        <link rel="" href="https://rent10.mx/wp-content/uploads/2021/09/favicon.png" >
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
