@@ -173,8 +173,8 @@
                     </div>
                     <div class="row">
                     <div class="col">
-                    <label for="floatingInput">Observaciones</label>
-                    <input type="text" name="observacion" value="{{ $sfiformulario->observacion}}" class="form-control"  disabled>                    
+                    <label for="floatingInput">Otros ingresos mensuales (En $MXN, si no tienes, pon $0)</label>
+                    <input type="number" name="otros_ingresos" value="{{  $sfiformulario->otros_ingresos}}" class="form-control" id="otros_ingresos" disabled>                  
                     </div>
                     <div class="col">
                     <label for="floatingInput">Resultado del Estudio</label>
@@ -188,7 +188,13 @@
                     </div>
                     <div class="col">
                     <label for="floatingInput">Valor resultado</label>
-                    <input type="text" name="resultado" value="{{ $sfiformulario->resultado }}" class="form-control"  disabled>                   
+                    <input type="text" name="resultado" value="{{ $sfiformulario->resultado }}" class="form-control"  disabled> 
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col">
+                    <label for="floatingInput">Observaciones</label>
+                    <input type="text" name="observacion" value="{{ $sfiformulario->observacion}}" class="form-control"  disabled>
                     </div>
                     </div>                    
                  </div>           

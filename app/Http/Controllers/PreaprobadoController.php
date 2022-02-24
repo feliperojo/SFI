@@ -24,7 +24,7 @@ class PreaprobadoController extends Controller
         $estudiopdf=preaprobado::findOrfail($id);
     if ($estudiopdf['Estado']=='Aprobado'){      
         $pdf = PDF::loadView('sfiformulario.pdf', compact('estudiopdf') );        
-        return $pdf->stream('Certidicado_de_estudio.pdf');
+        return $pdf->stream('Certificado_de_estudio.pdf');
         
     }   
     else{
@@ -66,7 +66,7 @@ class PreaprobadoController extends Controller
         $estudiopdf = preaprobado::insert($datosformulario); 
         $estudiopdf = preaprobado::latest('id')->first();             
         $pdf = PDF::loadView('sfiformulario.pdf', compact('estudiopdf'));    
-        return $pdf->stream('Certidicado_de_estudio.pdf');
+        return $pdf->stream('Certificado_de_estudio.pdf');
       
 
 

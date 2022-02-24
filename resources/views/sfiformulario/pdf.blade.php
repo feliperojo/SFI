@@ -107,7 +107,7 @@ Analista de Riesgo</pre>
     
     <div  id="footer" >  
     <hr size=10 style="width: 100%; margin:0; background:#1B5B94;">   
-    <pre><p>Recuerda: Esto no es una garantía para rentar. Indica únicamente que con la información brindada, el usuario podría obtener una
+    <pre><p> Recuerda: Esto no es una garantía para rentar. Indica únicamente que con la información brindada, el usuario podría obtener una
   Garantía de Renta con Rent10. El trámite está sujeto a análisis de riesgo crediticio, validación de documentación pendiente de envío, 
   aprobación de la compañía y realización del pago correspondiente.</p></pre>
   </div>
